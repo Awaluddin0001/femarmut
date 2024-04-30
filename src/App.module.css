@@ -1,0 +1,291 @@
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 21px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  border-radius: 10px;
+  padding: 32px;
+  font-size: 1.8rem;
+  height: 95vh;
+  background: -moz-linear-gradient(top, #010101 0%, #232323 100%);
+  background: -webkit-linear-gradient(top, #010101 0%, #232323 100%);
+  background: linear-gradient(to bottom, #010101 0%, #232323 100%);
+}
+
+.userNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.userGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.userGroup h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.userGroup h4 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.btn {
+  background-color: #1fdf64;
+  color: #000000;
+  border-radius: 100px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 8px 32px;
+  width: 90%;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgb(58, 238, 124);
+  transform: scale(1.1);
+  outline: none;
+  border: none;
+}
+
+.btn:active {
+  outline: none;
+  border: none;
+}
+
+.userPlaylist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 21px;
+  width: 70%;
+  border-radius: 10px;
+  padding: 32px;
+  font-size: 1.8rem;
+  height: 95vh;
+  background: -moz-linear-gradient(top, #010101 0%, #232323 100%);
+  background: -webkit-linear-gradient(top, #010101 0%, #232323 100%);
+  background: linear-gradient(to bottom, #010101 0%, #232323 100%);
+}
+
+.playListTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+.playListSubTitle {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.playListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 21px;
+  overflow-y: scroll;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.playListContainer::-webkit-scrollbar {
+  background-color: #073617; /* Adjust the color as needed */
+  width: 0.3rem; /* Adjust the width as needed */
+}
+
+.playListContainer::-webkit-scrollbar-thumb {
+  background-color: #1fdf64; /* Adjust the color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+/* For Firefox */
+.playListContainer::-moz-scrollbar {
+  width: 0.3rem; /* Adjust the width as needed */
+  background-color: #073617; /* Adjust the color as needed */
+}
+
+.playListContainer::-moz-scrollbar-thumb {
+  background-color: #1fdf64; /* Adjust the color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+/* For Internet Explorer and Edge */
+.playListContainer::-ms-scrollbar {
+  width: 0.3rem; /* Adjust the width as needed */
+  background-color: #073617; /* Adjust the color as needed */
+}
+
+.playListContainer::-ms-scrollbar-thumb {
+  background-color: #1fdf64; /* Adjust the color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+/* For Opera */
+.playListContainer::-o-scrollbar {
+  width: 0.3rem; /* Adjust the width as needed */
+  background-color: #073617; /* Adjust the color as needed */
+}
+
+.playListContainer::-o-scrollbar-thumb {
+  background-color: #1fdf64; /* Adjust the color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+/* For other browsers */
+.playListContainer::-webkit-scrollbar-thumb {
+  width: 0.3rem; /* Adjust the width as needed */
+  background-color: #1fdf64; /* Adjust the color as needed */
+  border-radius: 5px; /* Adjust the border radius as needed */
+}
+
+.playlistCard {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+  width: 15.8rem;
+  cursor: pointer;
+}
+.playlistCardCover {
+  padding: 30px;
+  border-radius: 5px;
+}
+.playlistCardTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.playlistTitleGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.btnAdd {
+  color: #fff;
+  text-underline-position: below;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.btnAdd:hover {
+  color: rgb(58, 238, 124);
+}
+
+.btnAddBack {
+  color: #fff;
+  text-underline-position: below;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.btnAddBack:hover {
+  color: rgb(238, 58, 58);
+}
+
+.modalPlaylistContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+}
+
+.modalPlaylist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  padding: 100px;
+  border-radius: 10px;
+  background: -moz-linear-gradient(bottom right, #010101 0%, #232323 100%);
+  background: -webkit-linear-gradient(bottom right, #010101 0%, #232323 100%);
+  background: linear-gradient(to top right, #010101 0%, #232323 100%);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inputTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: left;
+  margin: 0;
+}
+
+.inp {
+  padding: 16px;
+  width: 308px;
+  border-radius: 8px;
+  font-size: 1.7rem;
+  outline: none;
+  border: none;
+  border: 1px solid #898989;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 90px;
+}
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling for WebKit browsers */
+  width: 15px; /* Set the width of the slider thumb */
+  height: 15px; /* Set the height of the slider thumb */
+  background-color: #1fdf64; /* Set the background color of the slider thumb */
+  border-radius: 50%; /* Set the border radius to create a circular thumb */
+  cursor: pointer; /* Set cursor to pointer to indicate it's clickable */
+}
+
+/* Additional styling for Firefox */
+.slider::-moz-range-thumb {
+  width: 15px; /* Set the width of the slider thumb */
+  height: 15px; /* Set the height of the slider thumb */
+  background-color: #1fdf64; /* Set the background color of the slider thumb */
+  border-radius: 50%; /* Set the border radius to create a circular thumb */
+  cursor: pointer; /* Set cursor to pointer to indicate it's clickable */
+}

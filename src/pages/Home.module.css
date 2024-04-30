@@ -1,0 +1,43 @@
+.cardHome {
+  border-radius: 20px;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 370px;
+  width: 440px;
+  background: #121212;
+  background: -moz-linear-gradient(top, #121212 0%, #232323 100%);
+  background: -webkit-linear-gradient(top, #121212 0%, #232323 100%);
+  background: linear-gradient(to bottom, #121212 0%, #232323 100%);
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.btn {
+  background-color: #1fdf64;
+  color: #000000;
+  border-radius: 100px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 8px 32px;
+  width: 160px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgb(58, 238, 124);
+  transform: scale(1.1);
+  outline: none;
+  border: none;
+}
+
+.btn:active {
+  outline: none;
+  border: none;
+}
